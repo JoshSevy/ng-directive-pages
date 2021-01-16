@@ -59,7 +59,10 @@ export class AppComponent {
     {
       title: 'Cheap Fun',
       url: 'https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGhhcHB5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60'
-    },
-
+    }
   ];
+
+  checkWindowIndex(index: number) {
+    return Math.abs(this.currentPage - index) < 5;
+  }
 }
